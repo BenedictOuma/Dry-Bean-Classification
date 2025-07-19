@@ -31,7 +31,7 @@ You are to automate the classification of dry beans into **seven species** based
 
 ### 2. Model Training
 Trained and evaluated the following models:
-- Logistic Regression
+- Logistic Regression (Best performing)
 - Decision Tree
 - Random Forest
 - Gradient Boosting
@@ -60,15 +60,22 @@ All models evaluated using **cross-validation** for robust performance measureme
 ---
 
 ## Results & Insights
-- **Most impactful features**: Solidity, ShapeFactors, and Eccentricity showed strong class separation.
-- **High accuracy** achieved with a reduced feature set.
-- **Gradient Boosting** and **XGBoost** performed best post-tuning.
-- PCA visualization clearly separates most classes in 2D space.
+- Most influential features: **Solidity**, **ShapeFactors**, and **Eccentricity**
+- **Logistic Regression** delivered:
+  - Highest accuracy
+  - Best balance of simplicity and performance
+  - Lower risk of overfitting compared to tree-based models
+- PCA visualization showed distinct clustering of several bean types
+- Even with reduced dimensionality, performance remained strong
 
 ---
 
 ## Recommendation
-We recommend deploying a **Gradient Boosting** model for real-time classification in the automatic sorting line. It offers a balance of **speed, accuracy, and interpretability**.
+We recommend deploying the **Logistic Regression model** in the automated dry bean sorting system. It provides:
+- High accuracy
+- Fast inference
+- Model transparency & interpretability
+- Low resource requirements
 
 ---
 
